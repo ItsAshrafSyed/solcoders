@@ -11,7 +11,7 @@ const Contributors: React.FC = () => {
         alt="Hero"
         width={Infinity}
         height={Infinity}
-        className="absolute right-0 -top-64  opacity-80 z-0"
+        className="absolute left-0 -top-64  opacity-80 z-0"
       />
       <div className="relative z-50">
         <section className="py-20 px-4 bg-transparent">
