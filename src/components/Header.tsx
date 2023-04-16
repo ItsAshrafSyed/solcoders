@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import scrollToDiv from "./scrollTodiv";
 
 const Header: React.FC = () => {
   const [active, setActive] = useState(false);
@@ -76,6 +77,25 @@ const Header: React.FC = () => {
             >
               <li className={`${active ? "p-4" : "p-0"}`}>
                 <Link
+                  onClick={() => scrollToDiv("contributors")}
+                  className="text-gray-300 hover:text-gray-400 transition duration-150 ease-in-out"
+                  href="#"
+                >
+                  For Contributors
+                </Link>
+              </li>
+              <li className={`${active ? "p-4" : "p-0"}`}>
+                <Link
+                  onClick={() => scrollToDiv("organizations")}
+                  href="#"
+                  className="text-gray-300 hover:text-gray-400 transition duration-150 ease-in-out"
+                >
+                  For Organizations
+                </Link>
+              </li>
+              <li className={`${active ? "p-4" : "p-0"}`}>
+                <Link
+                  onClick={() => scrollToDiv("sponsors")}
                   href="#"
                   className="text-gray-300 hover:text-gray-400  transition duration-150 ease-in-out"
                 >
@@ -85,22 +105,6 @@ const Header: React.FC = () => {
               <li className={`${active ? "p-4" : "p-0"}`}>
                 <Link
                   href="#"
-                  className="text-gray-300 hover:text-gray-400 transition duration-150 ease-in-out"
-                >
-                  For Organizations
-                </Link>
-              </li>
-              <li className={`${active ? "p-4" : "p-0"}`}>
-                <a
-                  className="text-gray-300 hover:text-gray-400 transition duration-150 ease-in-out"
-                  href="#"
-                >
-                  For Contributors
-                </a>
-              </li>
-              <li className={`${active ? "p-4" : "p-0"}`}>
-                <Link
-                  href="/contact"
                   className=" flex items-center bg-gradient-to-r from-[#AB4EE9] to-[#2FFAA1] text-white py-1   px-8 rounded-lg hover:bg-blue-600 transition-colors duration-300"
                 >
                   Apply

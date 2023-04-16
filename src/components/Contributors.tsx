@@ -13,7 +13,7 @@ const Contributors: React.FC = () => {
         height={Infinity}
         className="absolute left-0 -top-64  opacity-80 z-0"
       />
-      <div className="relative z-50">
+      <div className="relative z-50" id="contributors">
         <section className="py-20 px-4 bg-transparent">
           <div className="container mx-auto">
             <div className="mx-auto text-left ">

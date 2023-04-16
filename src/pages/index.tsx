@@ -21,9 +21,9 @@ const Home: React.FC = () => {
       <HeroSection />
       <Contributors />
       <Organizations />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Sponsors />
-      <WallofLove />
+      {/* <WallofLove /> */}
       <NewsLetter />
       <Footer />
     </>

@@ -4,10 +4,10 @@ const NewsLetter: React.FC = () => {
   return (
     <div className="p-4 mb-24 flex flex-col justify-center items-center relative z-50">
       <h1 className="text-3xl font-semibold text-center tracking-wider mb-8">
-        Subscribe to the Summer of Solana Experience
+        Subscribe to the Solcoders Solana Experience
       </h1>
       <p className="text-xl text-center text-gray-400 tracking-wide mb-12">
-        Hear stories from past interns, get the best resources on bitcoin and
+        Hear stories from past interns, get the best resources on solana and
         learn about the latest job opportunities in the industry.
       </p>
       <div className="flex items-center">
