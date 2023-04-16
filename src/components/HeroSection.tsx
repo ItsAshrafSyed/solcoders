@@ -8,14 +8,14 @@ const HeroSection: React.FC = () => {
         alt="Hero"
         width={24}
         height={48}
-        className="absolute left-0 top-72  opacity-95 z-0"
+        className="absolute left-0 top-72  opacity-95 z-0 hidden md:block"
       />
       <Image
         src="/icons/hero-right.svg"
         alt="Hero"
         width={24}
         height={48}
-        className="absolute right-0 top-12 opacity-95 z-0"
+        className="absolute right-0 top-12 opacity-95 z-0 hidden md:block"
       />
       <Image
         src="/icons/hero-main.svg"
@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
         className="absolute right-0 -top-36 opacity-70 z-0"
       />
       <div className="relative z-50">
-        <section className="py-20 px-4 bg-transparent">
+        <section className="py-10 md:py-20 px-4 bg-transparent">
           <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
             <div className="max-w-xl">
               <h1 className="text-5xl md:text-[96px] font-bold my-4 tracking-wide">

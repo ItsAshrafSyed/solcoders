@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { RiArrowRightLine } from "react-icons/ri";
 
 //Contributors component
@@ -22,18 +23,18 @@ const Organizations: React.FC = () => {
                     height={30}
                     alt="Organizations"
                   />
-                  <p className="text-xl mt-2 mb-4 text-gray-300">
+                  <p className="text-[22px] mt-2 mb-4 text-gray-300">
                     More code and feature added
                   </p>
                 </div>
-                <div className="w-full ">
+                <div className="w-full  mt-6 md:mt-0 ">
                   <Image
                     src="/icons/organizations2.svg"
                     width={30}
                     height={30}
                     alt="Organizations"
                   />
-                  <p className="text-xl mt-2 mb-4 text-gray-300">
+                  <p className="text-[22px] mt-2 mb-4 text-gray-300">
                     Project adaption in wider developer community across
                     geographies
                   </p>
@@ -47,21 +48,23 @@ const Organizations: React.FC = () => {
                     height={30}
                     alt="Organizations"
                   />
-                  <p className="text-xl mt-2 mb-4 text-gray-300">
+                  <p className="text-[22px] mt-2 mb-4 text-gray-300">
                     Identify the best tech talent for full-time roles
                   </p>
                 </div>
                 <div className="w-full "></div>
               </div>
             </div>
-            <div className="w-full flex flex-row items-center justify-start">
-              <h3 className="text-xl font-normal text-gray-300 tracking-wider uppercase">
-                VIEW ORGANIZATION
-              </h3>
+            <div className="w-full flex flex-row items-center justify-start hover:translate-x-3 transition duration-300 ease-in-out">
+              <Link href="/">
+                <h3 className="text-xl font-normal text-gray-300 tracking-wider uppercase">
+                  VIEW ORGANIZATION
+                </h3>
+              </Link>
               <RiArrowRightLine className="text-2xl ml-4" />
             </div>
           </div>
-          <div className="p-4 order-first md:order-last">
+          <div className="p-4 order-first md:order-last mt-12 md:mt-0">
             <Image
               className="px-5"
               src="/images/organizations.png"

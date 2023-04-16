@@ -44,10 +44,12 @@ const Sponsors: React.FC = () => {
           alt="Sponsor"
         />
       </div>
-      <div className="w-full flex flex-row items-center justify-center">
-        <h3 className="text-xl font-normal text-gray-400 tracking-wider capitalize">
-          View More
-        </h3>
+      <div className="w-full flex flex-row items-center justify-center hover:translate-x-3 transition duration-300 ease-in-out">
+        <Link href="/">
+          <h3 className="text-xl font-normal text-gray-400 tracking-wider capitalize">
+            View More
+          </h3>
+        </Link>
         <RiArrowRightLine className="text-2xl ml-4 text-gray-400" />
       </div>
     </div>

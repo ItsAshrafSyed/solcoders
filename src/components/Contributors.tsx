@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { RiArrowRightLine } from "react-icons/ri";
 
 //Contributors component
@@ -31,18 +32,18 @@ const Contributors: React.FC = () => {
                         height={30}
                         alt="Contributors"
                       />
-                      <p className="text-xl mt-2 mb-4 text-gray-300">
+                      <p className="text-[22px] mt-2 mb-4 text-gray-300">
                         Learn how Solana works
                       </p>
                     </div>
-                    <div className="w-full ">
+                    <div className="w-full mt-6 md:mt-0 ">
                       <Image
                         src="/icons/contributors2.svg"
                         width={30}
                         height={30}
                         alt="Contributors"
                       />
-                      <p className="text-xl mt-2 mb-4 text-gray-300">
+                      <p className="text-[22px] mt-2 mb-4 text-gray-300">
                         Contribute to open-source projects on Solana
                       </p>
                     </div>
@@ -55,21 +56,23 @@ const Contributors: React.FC = () => {
                         height={30}
                         alt="Contributors"
                       />
-                      <p className="text-xl mt-2 mb-4 text-gray-300">
+                      <p className="text-[22px] mt-2 mb-4 text-gray-300">
                         Earn while you learn and Contribute
                       </p>
                     </div>
                     <div className="w-full "></div>
                   </div>
                 </div>
-                <div className="w-full flex flex-row items-center justify-start">
-                  <h3 className="text-xl font-normal text-gray-300 tracking-wider uppercase">
-                    HOW IT WORKS
-                  </h3>
-                  <RiArrowRightLine className="text-2xl ml-4 text-gray-300" />
+                <div className="w-full flex flex-row items-center justify-start hover:translate-x-3 transition duration-300 ease-in-out">
+                  <Link href="/">
+                    <h3 className="text-xl font-normal text-gray-300 tracking-wider uppercase">
+                      How it works
+                    </h3>
+                  </Link>
+                  <RiArrowRightLine className="text-2xl ml-4" />
                 </div>
               </div>
-              <div className="p-4 order-first md:order-last">
+              <div className="p-4 order-first mt-12 md:mt-0 md:order-last">
                 <Image
                   className="px-5"
                   src="/images/contributors.png"

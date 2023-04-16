@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
       <div className="relative z-50">
         <div className="px-8 container mx-auto ">
           <div className="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12 ">
-            <div className="col-span-12 lg:col-span-3 ">
+            <div className="col-span-12 lg:col-span-3 order-last md:order-first">
               <div className="mb-14">
                 <Link href="/" className="inline-block font-bold text-xl">
                   <Image
