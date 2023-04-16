@@ -67,7 +67,6 @@ body {
   transform: scale(1.2) !important;
   transition: all 0.5s linear !important;
 }
-
 .swiper-wrapper {
   align-items: center !important;
 }

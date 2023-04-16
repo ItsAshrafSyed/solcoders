@@ -2,7 +2,7 @@ import React from "react";
 
 const NewsLetter: React.FC = () => {
   return (
-    <div className="p-4 mb-24 flex flex-col justify-center items-center">
+    <div className="p-4 mb-24 flex flex-col justify-center items-center relative z-50">
       <h1 className="text-3xl font-semibold text-center tracking-wider mb-8">
         Subscribe to the Summer of Solana Experience
       </h1>

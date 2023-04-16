@@ -15,7 +15,7 @@ const Testimonials: React.FC = () => {
     clickable: true,
   };
   return (
-    <div className="p-4 m-10 mb-20">
+    <div className="p-4 m-10 mb-20 container mx-auto relative z-50">
       <div className="flex flex-col justify-center items-center mb-10">
         <h1 className="text-4xl font-semibold text-center tracking-wider mb-3">
           Testimonials

@@ -4,7 +4,7 @@ import { RiArrowRightLine } from "react-icons/ri";
 //Contributors component
 const Organizations: React.FC = () => {
   return (
-    <section className="py-20 px-4 bg-primary">
+    <section className="py-20 px-4 bg-transparent relative z-50">
       <div className="container mx-auto">
         <div className="mx-auto text-left">
           <h2 className="text-3xl font-bold mb-2">For Organizations</h2>

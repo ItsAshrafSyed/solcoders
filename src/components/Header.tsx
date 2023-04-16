@@ -9,15 +9,10 @@ const Header: React.FC = () => {
     setActive(!active);
   };
   return (
-    <div className="relative">
-      <header
-        className="transition flex-none mx-auto w-full bg-primary/90 backdrop-blur-sm border-b-0 p-5 mt-2 z-50"
-        style={{
-          zIndex: 50,
-        }}
-      >
-        <div className="mx-auto w-full md:flex md:justify-between max-w-7xl items-center z-50">
-          <div className="flex justify-between">
+    <div className="relative z-50">
+      <header className="transition relative flex-none mx-auto w-full bg-transparent backdrop-blur-sm border-b-0 p-5 mt-2 ">
+        <div className="container mx-auto w-full md:flex md:justify-between px-4 items-center">
+          <div className="flex justify-between ">
             <Link href="/">
               <Image
                 src="/images/logo.png"
@@ -68,14 +63,14 @@ const Header: React.FC = () => {
             </div>
           </div>
           <nav
-            className={`items-center py-4 w-full md:w-auto  expanded text-slate-200 ${
+            className={`items-center py-4 w-full md:w-auto expanded text-slate-200 ${
               active ? "block expanded navbarin" : "hidden md:flex"
             }`}
             aria-label="Main navigation"
             id="menu"
           >
             <ul
-              className={`flex flex-col  md:pt-0 transition md:flex-row md:self-center  w-full md:w-auto  text-xl md:text-base ${
+              className={`flex flex-col md:pt-0 transition md:flex-row md:self-center w-full md:w-auto text-xl md:text-base ${
                 active ? "space-x-0 items-start" : "space-x-12 items-center"
               }`}
             >
@@ -90,7 +85,7 @@ const Header: React.FC = () => {
               <li className={`${active ? "p-4" : "p-0"}`}>
                 <Link
                   href="#"
-                  className="text-gray-300 hover:text-gray-400  transition duration-150 ease-in-out"
+                  className="text-gray-300 hover:text-gray-400 transition duration-150 ease-in-out"
                 >
                   For Organizations
                 </Link>
